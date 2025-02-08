@@ -12,6 +12,7 @@
     <li><strong>TypeScript</strong> for type safety and scalability.</li>
     <li>Support for <strong>Social</strong> and <strong>Work</strong> notification categories.</li>
     <li><strong>Custom validation</strong> for request bodies with the use of DTOs (Data Transfer Objects).</li>
+    <li><strong>Gulp</strong> for automating tasks such as installing dependencies, running tests, generating the Prisma migrations and starting the server .</li>
   </ul>
 
 ## Tecnologias Usadas
@@ -22,19 +23,31 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=database&logoColor=white)
-
+![Gulp](https://img.shields.io/badge/gulp-ff5f00?logo=gulp&logoColor=white)
 
   </ul>
 
- ## Installation
-  <p>Follow the steps below to get started:</p>
-  <pre><code>git clone https://github.com/yourusername/notification-api.git</code></pre>
+## Execute project
+<pre><code>git clone https://github.com/yourusername/notification-api.git</code></pre>
+<pre><code>cd notification-api</code></pre>
+  
+## Run Gulp Tasks
+<p>To automate common tasks like installing dependencies, running tests, generating the Prisma migrations and starting the server, simply run:</p>
+<pre><code>npx gulp</code></pre>
+
+## OR 
+
+### Manual Dependency Installation
+<p>If you prefer to install the dependencies manually instead of using Gulp, you can simply run:</p>
+
   <pre><code>cd notification-api</code></pre>
   <pre><code>npm install</code></pre>
 
-  ## Setup
+  ### Manual Prisma Migrations Generation
   <pre><code>npx prisma migrate dev</code></pre>
   <pre><code>npx prisma generate</code></pre>
+
+  ### Manual Start Project
   <p>Start the server:</p>
   <pre><code>npm run start</code></pre>
 
