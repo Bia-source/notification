@@ -22,4 +22,12 @@ export const start = () => {
   return task(['npm run start'])();
 };
 
-export default series(install, test, compile, start);
+export const prismaMigrate = () => {
+    return task(['npx prisma migrate dev'])()
+}
+
+export const prismaGenerate = () => {
+    return task(['npx prisma generate'])();
+}
+
+export default series(install, prismaMigrate, test, compile, start);
